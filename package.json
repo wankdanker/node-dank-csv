@@ -1,6 +1,6 @@
 {
   "name": "dank-csv",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A csv parser",
   "main": "index.js",
   "directories": {
