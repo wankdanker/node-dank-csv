@@ -1,0 +1,28 @@
+{
+  "name": "dank-csv",
+  "version": "0.0.0",
+  "description": "A csv parser",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "nodeunit test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wankdanker/node-dank-csv.git"
+  },
+  "keywords": [
+    "csv",
+    "parse"
+  ],
+  "author": "Dan VerWeire",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wankdanker/node-dank-csv/issues"
+  },
+  "dependencies": {
+    "dank-map": "~0.1.0"
+  }
+}
