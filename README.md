@@ -13,6 +13,17 @@ var parse = require('dank-csv');
 var data = 'col1, col2, col3\n1234, 1234, 1234\n1235, asdf, fds23';
 
 console.log(parse(data));
+
+/*
+
+[ { col1: '1234',
+    col2: '1234',
+    col3: '1234' },
+  { col1: '1235',
+    col2: 'asdf',
+    col3: 'fds23' } ]
+*/
+
 ```
 
 api
