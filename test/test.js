@@ -1,6 +1,6 @@
 var parse = require('../');
 
-testData1 = 'col1, col2, col3\n1234, 1234, 1234\n1235, asdf, fds23';
+testData1 = 'col1, col2, col3\n1234, 1234, 1234   \n1235, asdf, fds23\n';
 testData2 = 'col1	col2	col3\n1234	1234	1234\n1235	asdf	fds23';
 testData3 = 'col1, col2, col3\n"something, something, dark side", 1234, 1234\n"hello,world", 1345, 245e';
 

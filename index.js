@@ -8,15 +8,19 @@ module.exports = function (data, colRegex) {
 	headerFields = parseLine(lines.shift(), colRegex);
 	
 	return map(lines, function (ix, line) {
-		var obj = {}, 
-			parsedLine = parseLine(line, colRegex);
+		if (!line) {
+			return;
+		}
+
+		var obj = {};
+		var parsedLine = parseLine(line, colRegex);
 		
 		map(headerFields, function (ix, fieldName) {
 			obj[fieldName] = parsedLine[ix];
 		});
 		
 		return obj;
-	});
+	}, true);
 };
 
 var parseLine = exports.parseLine = function (line, reg) {
